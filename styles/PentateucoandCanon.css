@@ -40,7 +40,7 @@ main .container-left .canon{
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
-    border-radius: 15px;
+    border-radius: 25px;
 }
 main .container-left .canon p:nth-child(1){
     width: 170px;
@@ -50,7 +50,7 @@ main .container-left .canon p:nth-child(1){
     font-weight: 300;
     background-color: var(--color-five);
     text-align: center;
-    border-radius: 15px;
+    border-radius: 25px;
     position: absolute;
     top: -20px;
 }
@@ -67,9 +67,12 @@ main .container-left .canon h2:nth-child(2){
 
 
 main .container-left .canones{
-    width: 700px;
+    width: 900px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
 }
 main .container-left .canones > h2{
     font-size:var(--lg);
@@ -80,14 +83,84 @@ main .container-left .canones > h2{
     text-align: center;
 }
 
+main .container-left .canones .container-canones{
+    width: inherit;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 120px;
+}
+.container-canones .canones-styles{
+    width: 280px;
+    height: 350px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 5px 5px;
+    position: relative;
+    flex-direction: column;
+}
 
+.container-canones .canones-styles ul{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container-canones .canones-styles .contend-canones-todos{
+    width: 230px;
+    height: 250px;
+    background-color: var(--color-four);
+    padding: 20px;
+    border-radius: 25px;
+    position: absolute;
+    top:-50px;
+    display: grid;
+    place-content: center;
+    border: 2px solid black;
+}
 
-.container-canones .canones-styles .img-canones{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+.container-canones .canones-griego, .img-canon-griego img{
+    background-color: var(--color-three);
+    border: 2px solid black;
+}
+.container-canones .canones-vulgata, .img-canon-catolico img{
+    background-color: var(--color-two);
+    border: 2px solid black;
+}
+
+.container-canones .canones-hebreo , .img-canon-hebreo img{ 
+    background-color: var(--color-one);
+    border: 2px solid black;
+}
+
+main .container-left .canones .container-canones .canones-styles .img-canones{
+    width: 80px;
+    height: 80px;
+    display: grid;
+    place-content: center;
 }
 main .container-left .canones .container-canones .canones-styles .img-canones img {
-    width: inherit;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    z-index: 10;
+    top: -100px;
+    border-radius: 50%;
 }
 
+.container-canones .hebreo p strong{
+    color: var(--color-one);
+}
+.container-canones .griego p strong{
+    color: var(--color-three);
+}
+.container-canones .canones-vulgata .catolico strong {
+    color: var(--color-two);
+}
+.container-canones strong{
+    font-size: var(--sm);
+}
