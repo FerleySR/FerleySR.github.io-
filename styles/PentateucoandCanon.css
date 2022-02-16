@@ -93,15 +93,14 @@ main .container-left .canones .container-canones{
 }
 .container-canones .canones-styles{
     width: 280px;
-    height: 350px;
+    height: 370px;
     border-radius: 25px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 50px 5px 5px;
     position: relative;
-    flex-direction: column;
 }
 
 .container-canones .canones-styles ul{
@@ -112,7 +111,7 @@ main .container-left .canones .container-canones{
 }
 .container-canones .canones-styles .contend-canones-todos{
     width: 230px;
-    height: 250px;
+    height: 260px;
     background-color: var(--color-four);
     padding: 20px;
     border-radius: 25px;
@@ -120,6 +119,7 @@ main .container-left .canones .container-canones{
     top:-50px;
     display: grid;
     place-content: center;
+    align-items: center;
     border: 2px solid black;
 }
 
@@ -163,4 +163,24 @@ main .container-left .canones .container-canones .canones-styles .img-canones im
 }
 .container-canones strong{
     font-size: var(--sm);
+}
+.container-canones span{
+    font-size: 1.2rem;
+}
+.container-canones .catolico li{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.canones-styles .canons-title{
+    width: 230px;
+    height: 110px;
+    margin-top: 20px;
+    text-align: center;
+}
+.canones-styles .canons-title h3{
+    font-size: var(--md);
+    color: var(--color-four);
+}
+.canones-styles .canons-title p{
+    font-size: 1.2rem;
 }
