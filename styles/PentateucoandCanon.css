@@ -1,7 +1,7 @@
 :root{
     --sm:1.4rem;
     --md:1.6rem;
-    --lg:1.8rem;
+    --lg:2.3rem;
     --color-one:#049DD9;
     --color-two:#F21D1D;
     --color-three:#674EBF;
@@ -31,16 +31,24 @@ main h1{
     margin: 16px 16px 16px 0;
     width: 100%;
 }
+main .container-left{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
 
 main .container-left .canon{
     width: 200px;
-    height: 230px;
+    height: 300px;
     background-color: #674EBF;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
     border-radius: 25px;
+    border: 2px solid black;
 }
 main .container-left .canon p:nth-child(1){
     width: 170px;
@@ -48,11 +56,12 @@ main .container-left .canon p:nth-child(1){
     height: 200px;
     font-size: var(--sm);
     font-weight: 300;
-    background-color: var(--color-five);
+    background-color: var(--color-four);
     text-align: center;
     border-radius: 25px;
     position: absolute;
     top: -20px;
+    border: 2px solid black;
 }
 main .container-left .canon h2:nth-child(2){
     width: 150px;
@@ -93,7 +102,7 @@ main .container-left .canones .container-canones{
 }
 .container-canones .canones-styles{
     width: 280px;
-    height: 370px;
+    height: 390px;
     border-radius: 25px;
     display: flex;
     justify-content: center;
@@ -111,7 +120,7 @@ main .container-left .canones .container-canones{
 }
 .container-canones .canones-styles .contend-canones-todos{
     width: 230px;
-    height: 260px;
+    height: 280px;
     background-color: var(--color-four);
     padding: 20px;
     border-radius: 25px;
@@ -183,4 +192,64 @@ main .container-left .canones .container-canones .canones-styles .img-canones im
 }
 .canones-styles .canons-title p{
     font-size: 1.2rem;
+}
+main .container-pentateuco{
+    width: 100%;
+    margin-top: 36px;
+    height: auto;
+    margin-bottom: 16px;
+}
+main .container-pentateuco .title-pentateuco{
+    font-size:var(--lg);
+    font-weight: 500;
+    color: var(--color-six);
+    padding: 4px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 36px;
+}
+main .container-pentateuco .content-pentateuco{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 20px;
+    align-content: center;
+}
+main .container-pentateuco .content-pentateuco div{
+    width: 400px;
+    height: 250px;
+    font-size: var(--md);
+    border: 2px solid black;
+    border-radius: 30px;
+    height: auto;
+    padding: 16px;   
+    display: grid;
+    place-content: center;
+    display: flex;
+    justify-content: end;
+}
+main .container-pentateuco .content-pentateuco div p{
+    width: 300px;
+    display: inline-block;
+    height:150px;
+    background-color: var(--color-four);
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 8px;
+}
+main .container-pentateuco .content-pentateuco div:nth-child(1), main .container-pentateuco .content-pentateuco div:nth-child(5){
+    background-color: var(--color-one);
+    box-shadow: 5px 5px 5px var(--color-one);
+}
+main .container-pentateuco .content-pentateuco div:nth-child(2),main .container-pentateuco .content-pentateuco div:nth-child(6){
+    background-color: var(--color-two);
+    box-shadow: 5px 5px 5px var(--color-two);
+}
+main .container-pentateuco .content-pentateuco div:nth-child(3),main .container-pentateuco .content-pentateuco div:nth-child(7){
+    background-color: var(--color-three);
+    box-shadow: 5px 5px 5px var(--color-three);
+}
+main .container-pentateuco .content-pentateuco div:nth-child(4), main .container-pentateuco .content-pentateuco div:nth-child(8){
+    background-color: var(--color-six);
+    box-shadow: 5px 5px 5px var(--color-six);
 }
