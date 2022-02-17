@@ -1,7 +1,7 @@
 :root{
     --sm:1.4rem;
     --md:1.6rem;
-    --lg:2.3rem;
+    --lg:3rem;
     --color-one:#049DD9;
     --color-two:#F21D1D;
     --color-three:#674EBF;
@@ -23,13 +23,16 @@ main{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 main h1{
-    font-size:3rem;
+    font-size:4rem;
     font-weight: 500;
-    color: var(--color-two);
-    margin: 16px 16px 16px 0;
-    width: 100%;
+    color: var(--color-one);
+    margin: 16px 16px 24px 0;
+    text-align: center;
+    border-bottom: 2px solid var(--color-one);
+    align-self: center;
 }
 main .container-left{
     width: 100%;
@@ -201,8 +204,8 @@ main .container-pentateuco{
 }
 main .container-pentateuco .title-pentateuco{
     font-size:var(--lg);
-    font-weight: 500;
-    color: var(--color-six);
+    font-weight: bold;
+    color: var(--color-two);
     padding: 4px;
     width: 100%;
     text-align: center;
@@ -212,7 +215,7 @@ main .container-pentateuco .content-pentateuco{
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: center;
-    gap: 20px;
+    gap: 60px;
     align-content: center;
 }
 main .container-pentateuco .content-pentateuco div{
@@ -226,7 +229,10 @@ main .container-pentateuco .content-pentateuco div{
     display: grid;
     place-content: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: end;
+    align-items: center;
+    position: relative;
 }
 main .container-pentateuco .content-pentateuco div p{
     width: 300px;
@@ -252,4 +258,19 @@ main .container-pentateuco .content-pentateuco div:nth-child(3),main .container-
 main .container-pentateuco .content-pentateuco div:nth-child(4), main .container-pentateuco .content-pentateuco div:nth-child(8){
     background-color: var(--color-six);
     box-shadow: 5px 5px 5px var(--color-six);
+}
+
+main .container-pentateuco .content-pentateuco div .img-contend-pentateuco{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    background-color: inherit;
+    position: absolute;
+    left: -40px;
+    border-radius: 50px;
+    box-shadow: none;
+    background-image: url(https://images.vexels.com/media/users/3/151819/isolated/lists/be4044585aa0a5b4eef9a9ac04337e28-ilustracion-de-personaje-de-jesucristo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; 
 }
