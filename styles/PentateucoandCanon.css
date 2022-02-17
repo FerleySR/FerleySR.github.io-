@@ -1,0 +1,276 @@
+:root{
+    --sm:1.4rem;
+    --md:1.6rem;
+    --lg:3rem;
+    --color-one:#049DD9;
+    --color-two:#F21D1D;
+    --color-three:#674EBF;
+    --color-four:#fff;
+    --color-five:#C9C9C9;
+    --color-six:#F2AC29;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Rubik', sans-serif;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main h1{
+    font-size:4rem;
+    font-weight: 500;
+    color: var(--color-one);
+    margin: 16px 16px 24px 0;
+    text-align: center;
+    border-bottom: 2px solid var(--color-one);
+    align-self: center;
+}
+main .container-left{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+main .container-left .canon{
+    width: 200px;
+    height: 300px;
+    background-color: #674EBF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+main .container-left .canon p:nth-child(1){
+    width: 170px;
+    padding: 8px;
+    height: 200px;
+    font-size: var(--sm);
+    font-weight: 300;
+    background-color: var(--color-four);
+    text-align: center;
+    border-radius: 25px;
+    position: absolute;
+    top: -20px;
+    border: 2px solid black;
+}
+main .container-left .canon h2:nth-child(2){
+    width: 150px;
+    font-size: var(--lg);
+    font-weight: 500;
+    color: var(--color-four);
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    margin: 4px;
+}
+
+
+main .container-left .canones{
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+main .container-left .canones > h2{
+    font-size:var(--lg);
+    font-weight: 500;
+    color: var(--color-six);
+    padding: 4px;
+    width: 100%;
+    text-align: center;
+}
+
+main .container-left .canones .container-canones{
+    width: inherit;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 120px;
+}
+.container-canones .canones-styles{
+    width: 280px;
+    height: 390px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 5px 5px;
+    position: relative;
+}
+
+.container-canones .canones-styles ul{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container-canones .canones-styles .contend-canones-todos{
+    width: 230px;
+    height: 280px;
+    background-color: var(--color-four);
+    padding: 20px;
+    border-radius: 25px;
+    position: absolute;
+    top:-50px;
+    display: grid;
+    place-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.container-canones .canones-griego, .img-canon-griego img{
+    background-color: var(--color-three);
+    border: 2px solid black;
+}
+.container-canones .canones-vulgata, .img-canon-catolico img{
+    background-color: var(--color-two);
+    border: 2px solid black;
+}
+
+.container-canones .canones-hebreo , .img-canon-hebreo img{ 
+    background-color: var(--color-one);
+    border: 2px solid black;
+}
+
+main .container-left .canones .container-canones .canones-styles .img-canones{
+    width: 80px;
+    height: 80px;
+    display: grid;
+    place-content: center;
+}
+main .container-left .canones .container-canones .canones-styles .img-canones img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    z-index: 10;
+    top: -100px;
+    border-radius: 50%;
+}
+
+.container-canones .hebreo p strong{
+    color: var(--color-one);
+}
+.container-canones .griego p strong{
+    color: var(--color-three);
+}
+.container-canones .canones-vulgata .catolico strong {
+    color: var(--color-two);
+}
+.container-canones strong{
+    font-size: var(--sm);
+}
+.container-canones span{
+    font-size: 1.2rem;
+}
+.container-canones .catolico li{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.canones-styles .canons-title{
+    width: 230px;
+    height: 110px;
+    margin-top: 20px;
+    text-align: center;
+}
+.canones-styles .canons-title h3{
+    font-size: var(--md);
+    color: var(--color-four);
+}
+.canones-styles .canons-title p{
+    font-size: 1.2rem;
+}
+main .container-pentateuco{
+    width: 100%;
+    margin-top: 36px;
+    height: auto;
+    margin-bottom: 16px;
+}
+main .container-pentateuco .title-pentateuco{
+    font-size:var(--lg);
+    font-weight: bold;
+    color: var(--color-two);
+    padding: 4px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 36px;
+}
+main .container-pentateuco .content-pentateuco{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 60px;
+    align-content: center;
+}
+main .container-pentateuco .content-pentateuco div{
+    width: 400px;
+    height: 250px;
+    font-size: var(--md);
+    border: 2px solid black;
+    border-radius: 30px;
+    height: auto;
+    padding: 16px;   
+    display: grid;
+    place-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+main .container-pentateuco .content-pentateuco div p{
+    width: 300px;
+    display: inline-block;
+    height:150px;
+    background-color: var(--color-four);
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 8px;
+}
+main .container-pentateuco .content-pentateuco div:nth-child(1), main .container-pentateuco .content-pentateuco div:nth-child(5){
+    background-color: var(--color-one);
+    box-shadow: 5px 5px 5px var(--color-one);
+}
+main .container-pentateuco .content-pentateuco div:nth-child(2),main .container-pentateuco .content-pentateuco div:nth-child(6){
+    background-color: var(--color-two);
+    box-shadow: 5px 5px 5px var(--color-two);
+}
+main .container-pentateuco .content-pentateuco div:nth-child(3),main .container-pentateuco .content-pentateuco div:nth-child(7){
+    background-color: var(--color-three);
+    box-shadow: 5px 5px 5px var(--color-three);
+}
+main .container-pentateuco .content-pentateuco div:nth-child(4), main .container-pentateuco .content-pentateuco div:nth-child(8){
+    background-color: var(--color-six);
+    box-shadow: 5px 5px 5px var(--color-six);
+}
+
+main .container-pentateuco .content-pentateuco div .img-contend-pentateuco{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    background-color: inherit;
+    position: absolute;
+    left: -40px;
+    border-radius: 50px;
+    box-shadow: none;
+    background-image: url(https://images.vexels.com/media/users/3/151819/isolated/lists/be4044585aa0a5b4eef9a9ac04337e28-ilustracion-de-personaje-de-jesucristo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; 
+}
