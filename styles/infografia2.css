@@ -1,0 +1,21 @@
+:root{
+    --main-background-color:#d0d9e0;
+    --secundary-background-color:#e7e7e7;
+    --color-title:#333333;
+    --color-subtitle:#3a3a3b;
+    --color-paragraph:#474849;
+    --lgx:3rem;
+    --lg:2rem;
+    --md:1.6rem;
+    --sm:1.4rem;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Comfortaa', cursive;
+    font-size: 62.5%;
+}
