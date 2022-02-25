@@ -18,12 +18,16 @@ html{
     font-family: 'Roboto', sans-serif;
     font-size: 62.5%;
 }
+
 main{
     width: 100%;
     display: grid;
     place-items: center;
 }
-
+main .main--title{
+    font-size: 4rem;
+    margin: 30px 0 20px;
+}
 main .etapas-pentateuco{
     width: 65%;
 }
@@ -134,4 +138,24 @@ main .etapas-pentateuco--container{
 }
 .etapas-pentateuco--container .etapas-pentateuco--contend-secundary .etapas-pentateuco--contend-secundary__center{
     grid-column: 2/2;
+}
+main .pentateucos{
+    width: 70%;
+    margin-top: 30px;
+}
+main .pentateucos .pentateucos--container{
+    width: 100%;
+    text-align: center;
+
+}
+main .pentateucos .pentateucos--container .pentateucos--contend{
+    width: 100%;
+    background-color: var(--main-background-color);
+}
+main .pentateucos .pentateucos--container .pentateucos--contend .pentateucos--contend--main{
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(2, 350px);
+    gap: 8px;
+    padding: 20px;
 }
