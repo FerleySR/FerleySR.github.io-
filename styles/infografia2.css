@@ -201,3 +201,7 @@ main .pentateucos .pentateucos--container .pentateucos--contend p{
     color: var(--color-paragraph);
     line-height: 1.5;
 }
+
+main .panteteuco-jesus{
+    margin-bottom: 60px;
+}
