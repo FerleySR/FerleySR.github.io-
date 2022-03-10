@@ -1,0 +1,55 @@
+:root{
+    --lgx:3rem;
+    --lg:2rem;
+    --md:1.8rem;
+    --sm:1.4rem;
+    --main-background-color:#081826;
+    --secundary-background-color:#D94E4E;
+    --color-paragraph:#333333;
+    --color-one:#049DD9;
+    --color-two:#F21D1D;
+    --color-three:#674EBF;
+    --color-four:#fff;
+    --color-five:#C9C9C9;
+    --color-six:#F2AC29;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+a{
+    color: var(--color-four);
+    text-decoration: none;
+    font-size: var(--md);
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+}
+main{
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+main div{
+    width: 350px;
+    height: 80px;
+    border-radius: 26px;
+    display: grid;
+    place-content: center;
+    margin: 40px;
+}
+main .card-1 {
+    background-color: var(--secundary-background-color);
+}
+main .card-2 {
+    background-color: var(--color-three);
+}
+
+main .card-3 {
+    background-color: var(--color-six);
+}
