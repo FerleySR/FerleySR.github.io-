@@ -1,0 +1,207 @@
+:root{
+    --main-background-color:#d0d9e0;
+    --secundary-background-color:#e7e7e7;
+    --color-title:#333333;
+    --color-subtitle:#3a3a3b;
+    --color-paragraph:#474849;
+    --lgx:3rem;
+    --lg:2rem;
+    --md:1.6rem;
+    --sm:1.4rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+main{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+main .main--title{
+    font-size: 4rem;
+    margin: 30px 0 20px;
+}
+main .etapas-pentateuco{
+    width: 65%;
+}
+
+main .etapas-pentateuco .etapas-pentateuco--title{
+    color: var(--color-title);
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.3rem;
+}
+main .etapas-pentateuco--container{
+    display: grid;
+    place-items: center;
+}
+.etapas-pentateuco--container .etapas-pentateuco--contend-main{
+    display: grid;
+    grid-template-columns: auto 500px;
+    background-color: var(--main-background-color);
+    margin-top: 100px;
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.etapas-pentateuco--container .etapas-pentateuco--contend-main .etapas-pentateuco--contend-main__titles{
+    padding: 20px;
+}
+.etapas-pentateuco--contend-main .etapas-pentateuco--contend-main__titles h2{
+    color: var(--color-title);
+    font-weight: bold;
+    text-align: center;
+    font-size: var(--lg);
+}
+.etapas-pentateuco--contend-main .etapas-pentateuco--contend-main__titles p{
+    color: var(--color-paragraph);
+    font-weight: 300;
+    text-align: center;
+    font-size: var(--md);
+    line-height: 1.3;
+    margin-top: 8px;
+}
+.etapas-pentateuco--container .etapas-pentateuco--contend-main .etapas-pentateuco--contend-main__img{
+    width: 400px;
+    height: 280px;
+    position: relative;
+    
+}
+.etapas-pentateuco--container .etapas-pentateuco--contend-main .etapas-pentateuco--contend-main__img img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:-15px;
+    left: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 2px rgba(0, 0, 0, 10);
+}
+
+.etapas-pentateuco--contend-secundary{
+    width: 90%;
+    height: auto;
+    margin-top: 60px;
+    background-color: var(--main-background-color);
+    padding: 20px;
+}
+.etapas-pentateuco--contend-secundary .etapas-pentateuco--contend-secundary__contend{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 4px;
+    flex-wrap: wrap;
+}
+.etapas-pentateuco--contend-secundary h3{
+    color: var(--color-subtitle);
+    font-size: var(--lg);
+    font-weight: bold;
+}
+.etapas-pentateuco--contend-secundary h4{
+    color: var(--color-subtitle);
+    font-size: var(--md);
+    font-weight: 500;
+    margin: 8px;
+}
+.etapas-pentateuco--contend-secundary p{
+    color: var(--color-paragraph);
+    font-size: var(--sm);
+    font-weight: 300;
+    line-height: 1.3;
+}
+.etapas-pentateuco--contend-secundary div img{
+    width: 120px;
+    height: 90px;
+    box-shadow: 5px 5px 15px 2px rgba(0, 0, 0, 10);
+    margin-bottom: 12px;
+    border-radius: 10px;
+}
+.etapas-pentateuco .etapas-pentateuco--contend-secundary{
+    display: grid;
+    grid-template-columns: 260px 260px 260px;
+    grid-row: auto;
+    place-content: center;
+    align-items: baseline;
+    text-align: center;
+}
+.etapas-pentateuco--container .etapas-pentateuco--contend-secundary div:nth-child(1){
+    grid-column: 1/4;
+    text-align: center;
+}
+.etapas-pentateuco--container .etapas-pentateuco--contend-secundary .etapas-pentateuco--contend-secundary__center{
+    grid-column: 2/2;
+}
+main .pentateucos{
+    width: 70%;
+    margin-top: 30px;
+}
+main .pentateucos .pentateucos--container{
+    width: 100%;
+    text-align: center;
+
+}
+main .pentateucos .pentateucos--container .pentateucos--contend{
+    width: 100%;
+    background-color: var(--main-background-color);
+    border-radius: 20px;
+}
+main .pentateucos .pentateucos--container .pentateucos--contend .pentateucos--contend--main{
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(2, 400px);
+    gap: 24px;
+    padding: 20px;
+}
+.pentateucos--container .pentateucos--title{
+    font-size: var(--lgx);
+    font-weight: bold;
+    color: var(--color-title);
+    margin-bottom: 50px;
+    border-top: 1px solid var(--color-title);
+    padding-top: 76px;
+}
+.pentateucos--contend--main .pentateucos--contend--cards{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.pentateucos--contend--main .pentateucos--contend--cards .card--right{
+    width: 250px;
+    padding: 20px;
+    margin: 10px;
+}
+.pentateucos--contend--main .pentateucos--contend--cards .card-left img{
+    width: 120px;
+    height:90px ;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 2px rgba(0, 0, 0, 10);
+}
+.pentateucos--contend--main .pentateucos--contend--cards h4{
+    font-size: var(--md);
+    font-weight: bold;
+    color: var(--color-subtitle);
+}
+main .pentateucos .pentateucos--container .pentateucos--contend h3{
+    font-size: var(--lg);
+    font-weight: bold;
+    color: var(--color-title);
+    padding: 8px;
+}
+main .pentateucos .pentateucos--container .pentateucos--contend p{
+    font-size: var(--sm);
+    font-weight: 300;
+    color: var(--color-paragraph);
+    line-height: 1.5;
+}
+
+main .panteteuco-jesus{
+    margin-bottom: 60px;
+}

@@ -1,0 +1,133 @@
+:root{
+    --lgx:3rem;
+    --lg:2rem;
+    --md:1.8rem;
+    --sm:1.4rem;
+    --main-background-color:#081826;
+    --secundary-background-color:#D94E4E;
+    --color-paragraph:#333333;
+    --color-one:#049DD9;
+    --color-two:#F21D1D;
+    --color-three:#674EBF;
+    --color-four:#fff;
+    --color-five:#C9C9C9;
+    --color-six:#F2AC29;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--main-background-color);
+}
+h1{
+    color: var(--color-four);
+    text-align: center;
+    margin: 36px;
+    font-size: var(--lgx);
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    align-items: start;
+    gap: 28px;
+    width: 100%;
+    place-content: center;
+}
+main .card-principal-container{
+    width: 500px;
+    height: auto;
+    display: grid;
+    place-content: center;
+}
+.card-principal-container .card-principal-contend, .card-principal-container .card-secundary-contend{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    align-content: center;  
+    margin-bottom: 16px;
+    border-radius: 12px;
+}
+.card-principal-container .card-principal-contend{
+    height: 100px;
+    margin-bottom: 20px;
+}
+.card-principal-container .card-principal-contend img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 16px;
+}
+.card-principal-container .card-secundary-contend img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 16px;
+}
+.card-principal-container .card-principal-contend .card-principal-text{
+    width: 350px;
+    margin: 0 16px;
+    color: var(--color-four);
+    text-align: center;
+}
+.card-principal-container .card-secundary-contend .card-secundary-text{
+    width: 340px;
+    margin: 0 16px;
+}
+main span{
+    font-size: var(--sm);
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+main h2{
+    font-size: var(--lg);
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin-bottom: 12px;
+    text-align: center;
+}
+main h3{
+    font-size: var(--md);
+    font-weight: 500;
+    line-height: 1.8rem;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.card-principal-container .card-secundary-contend{
+    background-color: var(--color-four);
+    min-height: 120px;
+    max-height: 350px;
+}
+main .card-1 .card-principal-contend{
+    background-color: var(--secundary-background-color);
+}
+main .card-2 .card-principal-contend{
+    background-color: var(--color-three);
+}
+
+main .card-3 .card-principal-contend{
+    background-color: var(--color-six);
+}
+
+main .card-4 .card-principal-contend{
+    background-color: var(--color-one);
+}
+
+main .card-5 .card-principal-contend{
+    background-color: var(--color-two);
+}
+main .card-principal-container div:nth-child(2) div h3{
+    color: var(--color-six);
+}
+main .card-principal-container div:nth-child(3) div h3{
+    color: var(--color-one);
+}
+main .card-principal-container div:nth-child(4) div h3{
+    color: var(--color-three);
+}
+
