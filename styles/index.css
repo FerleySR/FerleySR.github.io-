@@ -53,3 +53,6 @@ main .card-2 {
 main .card-3 {
     background-color: var(--color-six);
 }
+main .card-4 {
+    background-color: var(--color-one);
+}
