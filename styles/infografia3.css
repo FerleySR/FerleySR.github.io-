@@ -148,3 +148,8 @@ html{
     box-shadow: inset 4px 4px var(--color-five);
 }
 
+/*pentateuchal-identity*/
+.pentateuchal-identity{
+    width: 100%;
+    height: 400px;
+}
