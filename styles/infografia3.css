@@ -28,9 +28,19 @@ html{
     display: grid;
     place-content: center;
 }
+.pentateuchal-identity > h2, .menorah-container > h2{
+    margin: 20px 0px;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+}
+.pentateuchal-identity > h3{
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
 .pentateuchal-identity--container{
-    width: 900px;
-    border:2px solid #201E1C;
+    width: 1000px;
     display: grid;
     margin-top: 60px;
     margin-bottom: 60px;
@@ -43,7 +53,7 @@ html{
 }
 .pentateuchal-identity--contend h4{
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 8px;
 }
 .pentateuchal-identity--contend span{
@@ -55,14 +65,24 @@ html{
     width: 20px;
     height: 20px;
 }
+.container-one{
+    background-color: var(--color-six);
+}
+.container-two{
+    background-color: var(--color-one);
+}
+.container-three{
+    background-color: var(--color-nine);
+}
+
 
 /*Menorah*/
 .menorah-container{
     width: 100%;
     display: grid;
     place-content: center;
-    margin: 0px 0px 150px 0px;
     font-size: 1.4rem;
+    background-color: var(--color-seven);
 }
 .menorah--contend{
     width: 100px;
@@ -77,7 +97,7 @@ html{
 .menorah-1{
     width: 600px;
     height: 300px;
-    margin: 100px auto;
+    margin: 10px auto 300px;
     display: grid;
     place-content: center;
     align-items: start;
