@@ -1,0 +1,24 @@
+root{
+    --lgx:3rem;
+    --lg:2rem;
+    --md:1.8rem;
+    --sm:1.4rem;
+    --color-one:#049DD9;
+    --color-two:#F21D1D;
+    --color-three:#ff0054;
+    --color-four:#fff;
+    --color-five:#ff5400;
+    --color-six:#F2AC29;
+    --color-seven:#000;
+    --color-eight:#2b9348;
+    --color--nine:#2af5ff;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Merriweather Sans', sans-serif;  
+}
