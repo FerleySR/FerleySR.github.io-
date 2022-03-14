@@ -1,4 +1,4 @@
-root{
+:root{
     --lgx:3rem;
     --lg:2rem;
     --md:1.8rem;
@@ -12,6 +12,7 @@ root{
     --color-seven:#000;
     --color-eight:#2b9348;
     --color--nine:#2af5ff;
+    --color-ten:#ffdd4a;
 }
 *{
     box-sizing: border-box;
@@ -21,4 +22,55 @@ root{
 html{
     font-size: 62.5%;
     font-family: 'Merriweather Sans', sans-serif;  
+}
+
+.section-1 .menorah{
+    width:600px;
+    height: 700px;
+}
+
+.section-1 .menorah .menorah-1{
+    width: 600px;
+    height: 350px;
+    display: grid;
+    place-content: center;
+    align-content: space-between
+}
+.section-1 .menorah .menorah-2{
+    width: 400px;
+    height: 250px;
+    display: grid;
+    place-content: center;
+    align-content: space-between
+}
+.section-1 .menorah .menorah-3{
+    width: 200px;
+    height: 150px;
+    display: grid;
+    place-content: center;
+    align-content: space-between
+}
+.section-1 .menorah .menorah-3 .menorah-4{
+    width:4px;
+    height: 500px;
+    display: grid;
+    place-content: center;
+    align-content: stretch;
+    align-items: end;
+    box-shadow: inset 4px 4px var(--color-ten);
+}
+.section-1 .menorah .menorah-4 .menorah-5{
+    width:250px;
+    height: 4px;
+    display: grid;
+    place-content: center;
+    align-content: space-between;
+    box-shadow: inset 4px 4px var(--color-ten);
+}
+.section-1 .menorah__color{
+    border-bottom: 4px solid var(--color-ten);
+    border-left: 4px solid var(--color-ten);
+    border-right: 4px solid var(--color-ten);
+    border-bottom-left-radius:50%;
+    border-bottom-right-radius: 50%;
 }
