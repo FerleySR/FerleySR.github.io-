@@ -54,9 +54,10 @@ html{
 .prophets .prophets--container{
     width: 900px;
     height: auto;
-    margin: 20px 0px 20px;
+    margin: 20px 0px;
     display: grid;
     place-content: center;
+    margin: 0 auto;
     text-align: center;
     gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -85,6 +86,60 @@ html{
     box-shadow: 0px 15px 10px var(--color-seven);
     border-radius: 40px;
 }
+/*section1*/
 .section-1{
     background-color: var(--color--nine);
+}
+.section-1 .prophets--container div:nth-child(1){
+    grid-column: 2;
+}
+/*section2*/
+.section-2{
+    background-color: var(--color-three);
+}
+.section-2 .section-2--container{
+    width: 700px;
+    grid-template-columns: 1fr 1fr;
+}
+.section-2--title{
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 20px;
+}
+.section-2 .section-2--table{
+    display: grid;
+    grid-template-columns: repeat(4,300px);
+    grid-area: var(--color-two);
+    margin: 20px;
+    gap: 1px;
+}
+.section-2 .section-2--table .section-2--table--container{
+    border: 1px solid var(--color-seven);
+    background-color: var(--color-eight);
+    padding: 8px;
+}
+.section-2 .section-2--table .section-2--table--container span{
+    font-size: 1.6rem;
+}
+.section-2 .section-2--table .section-2--table--container ol{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 8px;
+    padding: 0;
+    text-align: center;
+}
+.section-2 .section-2--table .section-2--table--container ol li{
+    width: 250px;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+/*section3*/
+.section-3{
+    background-color: var(--color-ten);
+}
+
+/*section4*/
+.section-4{
+    background-color: var(--color-eight);
 }
