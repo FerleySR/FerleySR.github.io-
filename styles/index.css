@@ -13,6 +13,7 @@
     --color-five:#C9C9C9;
     --color-six:#F2AC29;
     --color-seven:#ff0054;
+    --color-eight:#23CE6B;
 }
 *{
     box-sizing: border-box;
@@ -31,11 +32,30 @@ a{
     text-align: center;
     width: 300px;
 }
-main{
+main .infografia{
     width: 100%;
     display: grid;
     place-content: center;
 }
+main .autor{
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--color-seven);
+    margin: 10px auto;
+    color: var(--color-four);
+}
+main .autor img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+main .autor h2{
+    font-size: 2rem;
+}
+
 main div{
     width: 350px;
     height: 80px;
@@ -59,4 +79,7 @@ main .card-4 {
 }
 main .card-5 {
     background-color: var(--color-seven);
+}
+main .card-6{
+    background-color: var(--color-eight);
 }
