@@ -12,6 +12,7 @@
     --color-four:#fff;
     --color-five:#C9C9C9;
     --color-six:#F2AC29;
+    --color-seven:#ff0054;
 }
 *{
     box-sizing: border-box;
@@ -55,4 +56,7 @@ main .card-3 {
 }
 main .card-4 {
     background-color: var(--color-one);
+}
+main .card-5 {
+    background-color: var(--color-seven);
 }
