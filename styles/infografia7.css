@@ -1,0 +1,26 @@
+:root{
+    --lgx:3rem;
+    --lg:2rem;
+    --md:1.8rem;
+    --sm:1.4rem;
+    --main-background-color:#081826;
+    --secundary-background-color:#D94E4E;
+    --color-paragraph:#333333;
+    --color-one:#049DD9;
+    --color-two:#F21D1D;
+    --color-three:#674EBF;
+    --color-four:#fff;
+    --color-five:#C9C9C9;
+    --color-six:#F2AC29;
+    --color-seven:#ff0054;
+    --color-eight:#23CE6B;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
