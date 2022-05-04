@@ -24,3 +24,55 @@ html{
     font-family: 'Roboto', sans-serif;
     font-size: 62.5%;
 }
+header{
+    width: 100%;
+    text-align: center;
+}
+main{
+    width: 100%;
+    height: auto;
+}
+main section{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+main section .article__container{
+    width: 220px;
+    height: auto;
+    margin: 20px auto;
+}
+section .article__container .article__image{
+    width: 100%;
+    height: 200px;
+}
+section .article__container .article__text{
+    padding: 20px;
+}
+section .article__container .article__text p{
+    font-size:1.6rem;
+}
+section .article__container .article__number{
+    width: 100%;
+    height: 40px;
+    padding: 20px 0px;
+    display: grid;
+    place-content: center;
+    position: relative;
+}
+section .article__container .article__number span{
+    width:30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    left: -15px;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+section .article__container .article__number h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2rem;
+}
