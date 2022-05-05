@@ -38,7 +38,7 @@ main .infografia{
     place-content: center;
 }
 main .autor{
-    width: 400px;
+    width: 330px;
     height: 200px;
     display: flex;
     justify-content: space-evenly;
@@ -57,7 +57,7 @@ main .autor h2{
 }
 
 main div{
-    width: 350px;
+    width: 320px;
     height: 80px;
     border-radius: 26px;
     display: grid;
@@ -82,4 +82,19 @@ main .card-5 {
 }
 main .card-6{
     background-color: var(--color-eight);
+}
+main .card-7 {
+    background-color: var(--color-six);
+}
+main .card-8 {
+    background-color: var(--color-one);
+}
+main .card-9 {
+    background-color: var(--color-seven);
+}
+main .card-10{
+    background-color: var(--color-eight);
+}
+main .card-11 {
+    background-color: var(--color-three);
 }
