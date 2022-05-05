@@ -4,7 +4,7 @@
     --md:1.8rem;
     --sm:1.4rem;
     --main-background-color:#081826;
-    --secundary-background-color:#92DCE5;
+    --secundary-background-color:#FFCF56;
     --color-paragraph:#333333;
     --color-one:#049DD9;
     --color-two:#F21D1D;
@@ -218,4 +218,63 @@ section .article__container--color-10 .article__image,  .article__container--col
 }
 .article__container--color-10 .article__number h2{
     color: var(--color-three);
+}
+
+.reyesYProfetas{
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-content: center;
+}
+.reyesYProfetas .reyesYProfetas__title{
+    font-size: 2.8rem;
+    text-align: center;
+}
+.reyesYProfetas .reyesYProfetas__container{
+    min-width: 300px;
+    max-width: 900px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+}
+main .reyesYProfetas .reyesYProfetas__container .reyesYProfetas__contend{
+    width: 200px;
+    padding: 10px;
+    margin: 20px 10px;
+    height: auto;
+}
+main .reyesYProfetas h2{
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+.reyesYProfetas__container .reyesYProfetas__contend div{
+    display: grid;
+    place-content: center;
+    width: 100%;
+    padding: 15px 0px;
+}
+.reyesYProfetas__container .reyesYProfetas__contend div span{
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-align: center;
+}
+.reyesNorte{
+    background-color: var(--color-eight);
+    border-radius: 10px;
+}
+.profestaNorte{
+    background-color: var(--color-one);
+    border-radius: 10px;
+}
+.reyesSur{
+    background-color: var(--color-seven);
+    border-radius: 10px;
+}
+.profetasSur{
+    background-color: var(--color-two);
+    border-radius: 10px;
 }
