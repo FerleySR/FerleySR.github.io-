@@ -12,6 +12,9 @@ section h2{
 .section1 article:nth-child(10){
     height: 300px;
 }
-.section2 article:nth-child(5){
+.section1 article:nth-child(4){
+    height: 350px;
+}
+.section2 article:nth-child(4){
     height: 320px;
 }
