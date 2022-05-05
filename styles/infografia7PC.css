@@ -1,0 +1,17 @@
+.section1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+.section2{
+    display: grid;
+    grid-template-columns: auto auto   auto;
+}
+.section2 h2{
+    grid-column: 1 / 4 ;
+}
+.section1 article:nth-child(4){
+   height: 300px;
+}
+.section2 article:nth-child(5){
+    height: 320px;
+}
