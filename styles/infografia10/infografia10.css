@@ -1,0 +1,280 @@
+:root{
+    --lgx:3rem;
+    --lg:2rem;
+    --md:1.8rem;
+    --sm:1.4rem;
+    --main-background-color:#081826;
+    --secundary-background-color:#FFCF56;
+    --color-paragraph:#333333;
+    --color-one:#049DD9;
+    --color-two:#F21D1D;
+    --color-three:#674EBF;
+    --color-four:#fff;
+    --color-five:#C9C9C9;
+    --color-six:#F2AC29;
+    --color-seven:#ff0054;
+    --color-eight:#23CE6B;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--secundary-background-color);
+}
+header{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin: 0px 0px 70px 0px ;
+}
+header h1{
+    font-weight: bold;
+    font-size: 3.3rem;
+    padding: 30px;
+    line-height: 5rem;
+}
+header .title__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    position: relative;
+}
+header .title__container .title__line{
+    width:70%;
+    height: 2px;
+    border-top: 2px solid var(--color-paragraph);
+    position: absolute;
+    z-index: -1;
+}
+header .title__container .title__container--colors{
+    width: 200px;
+    height: 25px;
+    background-color: var(--secundary-background-color);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+header .title__container .title__container--colors div{
+    width: 20px;
+    height: 20px;
+}
+header .title__container .title__container--colors div:nth-child(1){
+    background-color: var(--color-six);
+}
+header .title__container .title__container--colors div:nth-child(2){
+    background-color: var(--color-seven);
+}
+header .title__container .title__container--colors div:nth-child(3){
+    background-color: var(--color-two);
+}
+header .title__container .title__container--colors div:nth-child(4){
+    background-color: var(--color-three);
+}
+header .title__container .title__container--colors div:nth-child(5){
+    background-color: var(--color-four);
+}
+header .title__container .title__container--colors div:nth-child(6){
+    background-color: var(--color-paragraph);
+}
+main{
+    width: 100%;
+    height: auto;
+}
+main section{
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+main section .article__container{
+    width: 205px;
+    height: auto;
+    margin: 20px auto;
+    box-shadow: 2px 2px var(--color-paragraph),-2px 2px var(--color-paragraph),2px -2px var(--color-paragraph),-2px -2px var(--color-paragraph);
+    border-radius: 10px;
+    background-color: var(--color-four);
+}
+section .article__container .article__image{
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 150px;
+    border-top-left-radius:9px;
+    border-top-right-radius: 9px;
+}
+section .article__container .article__image img{
+    width: 120px;
+    height: 120px;
+}
+section .article__container .article__text{
+    padding: 15px 25px ;
+}
+section .article__container .article__text p{
+    font-size:1.4rem;
+    font-weight: 300;
+    text-align: center;
+}
+section .article__container .article__number{
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    position: relative;
+}
+section .article__container .article__number span{
+    width:30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    left: -15px;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    border: 2.5px solid var(--color-paragraph);
+    border-radius: 10px;
+    color: var(--color-four);
+}
+section .article__container .article__number h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+section > h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.8rem;
+    line-height: 4rem;
+    padding: 20px;
+}
+
+section .article__container--color-1 .article__image,  .article__container--color-1 .article__number span{
+    background-color: var(--color-eight);
+}
+.article__container--color-1 .article__number h2{
+    color: var(--color-eight);
+}
+
+section .article__container--color-2 .article__image,  .article__container--color-2 .article__number span{
+    background-color: var(--color-one);
+}
+.article__container--color-2 .article__number h2{
+    color: var(--color-one);
+}
+section .article__container--color-3 .article__image,  .article__container--color-3 .article__number span{
+    background-color: var(--color-two);
+}
+.article__container--color-3 .article__number h2{
+    color: var(--color-two);
+}
+section .article__container--color-4 .article__image,  .article__container--color-4 .article__number span{
+    background-color: var(--color-three);
+}
+.article__container--color-4 .article__number h2{
+    color: var(--color-three);
+}
+section .article__container--color-5 .article__image,  .article__container--color-5 .article__number span{
+    background-color: var(--color-six);
+}
+.article__container--color-5 .article__number h2{
+    color: var(--color-six);
+}
+section .article__container--color-6 .article__image,  .article__container--color-6 .article__number span{
+    background-color: var(--color-seven);
+}
+.article__container--color-6 .article__number h2{
+    color: var(--color-seven);
+}
+section .article__container--color-7 .article__image,  .article__container--color-7 .article__number span{
+    background-color: var(--color-one);
+}
+.article__container--color-7 .article__number h2{
+    color: var(--color-one);
+}
+section .article__container--color-8 .article__image,  .article__container--color-8 .article__number span{
+    background-color: var(--color-eight);
+}
+.article__container--color-8 .article__number h2{
+    color: var(--color-eight);
+}
+section .article__container--color-9 .article__image,  .article__container--color-9 .article__number span{
+    background-color: var(--color-two);
+}
+.article__container--color-9 .article__number h2{
+    color: var(--color-two);
+}
+section .article__container--color-10 .article__image,  .article__container--color-10 .article__number span{
+    background-color: var(--color-three);
+}
+.article__container--color-10 .article__number h2{
+    color: var(--color-three);
+}
+
+.reyesYProfetas{
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-content: center;
+}
+.reyesYProfetas .reyesYProfetas__title{
+    font-size: 2.8rem;
+    text-align: center;
+}
+.reyesYProfetas .reyesYProfetas__container{
+    min-width: 300px;
+    max-width: 900px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+}
+main .reyesYProfetas .reyesYProfetas__container .reyesYProfetas__contend{
+    width: 200px;
+    padding: 10px;
+    margin: 20px 10px;
+    height: auto;
+}
+main .reyesYProfetas h2{
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+.reyesYProfetas__container .reyesYProfetas__contend div{
+    display: grid;
+    place-content: center;
+    width: 100%;
+    padding: 15px 0px;
+}
+.reyesYProfetas__container .reyesYProfetas__contend div span{
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-align: center;
+}
+.reyesNorte{
+    background-color: var(--color-eight);
+    border-radius: 10px;
+}
+.profestaNorte{
+    background-color: var(--color-one);
+    border-radius: 10px;
+}
+.reyesSur{
+    background-color: var(--color-seven);
+    border-radius: 10px;
+}
+.profetasSur{
+    background-color: var(--color-two);
+    border-radius: 10px;
+}

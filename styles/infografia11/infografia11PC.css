@@ -1,0 +1,9 @@
+.section1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+section h2{
+    grid-column: 1 / 4;
+}
+
+
