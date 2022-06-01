@@ -2,15 +2,15 @@
     --lgx:3rem;
     --lg:2rem;
     --md:1.8rem;
-    --sm:1.2rem;
+    --sm:1.3rem;
     --main-background-color:#081826;
     --secundary-background-color:#D94E4E;
     --color-paragraph:#333333;
     --color-one:#049DD9;
     --color-two:#F21D1D;
     --color-three:#674EBF;
-    --color-four:#fff;
-    --color-five:#C9C9C9;
+    --color-four:rgba(255, 255, 255,0.8);
+    --color-five:rgb(255, 255, 255);
     --color-six:#F2AC29;
     --color-seven:#ff0054;
     --color-eight:#23CE6B;
@@ -26,6 +26,9 @@ html{
 }
 body{
     background-color: var(--color-eight);
+}
+a{
+    text-decoration: none;
 }
 header{
     width: 100%;
@@ -79,13 +82,14 @@ header h1{
     background-color: var(--color-three);
 }
 .title__container--colors div:nth-child(5){
-    background-color: var(--color-four);
+    background-color: var(--color-five);
 }
 .title__container--colors div:nth-child(6){
     background-color: var(--color-paragraph);
 }
 main{
     width: 100%;
+    margin: 0 0 20px 0;
 }
 .information{
     width: 80%;
@@ -95,18 +99,20 @@ main{
     width: 100%;
     display: grid;
     place-content: center;
+    align-items: start;
 }
 .information-container{
     width: 270px;
     display: grid;
     grid-template-columns: 1fr auto;
-    grid-template-rows: auto 80px;
+    grid-template-rows: auto 30px;
     gap: 10px;
     margin: 30px 50px;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 5px 5px 3px var(--color-paragraph);
     background-color: var(--color-four);
+    flex: none;
 }
 .information-container__contend{
     width: 160px;
@@ -142,7 +148,7 @@ main{
 }
 .information-container__contend p{
     font-size: var(--sm);
-    line-height: 1.5rem;
+    line-height: 1.6rem;
     font-weight: 300;
 }
 .information-container__line{
@@ -164,6 +170,8 @@ main{
     height: 110px;
     display: grid;
     place-content: center;
+    position: relative;
+    top: -50px;
     border-radius: 8px;
     box-shadow: 5px 5px 3px var(--color-paragraph);
 }
@@ -186,4 +194,36 @@ main{
 }
 .information-container__img--color-five{
     background-color: var(--color-seven);
+}
+footer{
+    width: 100%;
+    background-color:var(--color-one);
+    padding: 10px 0 20px;
+}
+footer h2{
+    text-align: center;
+    font-weight: 500;
+    padding:10px;
+}
+
+.credits{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    place-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 10px;
+}
+.credits li{
+    width: auto;
+    margin: 5;
+}
+.credits li::after{
+    content: " │";
+}
+.credits li a{
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--main-background-color);
 }
