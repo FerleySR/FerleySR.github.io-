@@ -2,7 +2,7 @@
     --lgx:3rem;
     --lg:2rem;
     --md:1.8rem;
-    --sm:1.4rem;
+    --sm:1.2rem;
     --main-background-color:#081826;
     --secundary-background-color:#D94E4E;
     --color-paragraph:#333333;
@@ -24,16 +24,65 @@ html{
     font-family: 'Roboto', sans-serif;
     font-size: 62.5%;
 }
+body{
+    background-color: var(--color-eight);
+}
 header{
     width: 100%;
-    height: 150px;
-    display: grid;
-    place-content: center;
+    height: auto;
 }
 header h1{
+    width: 100%;
     font-size: var(--lgx);
+    text-align: center;
     font-weight: bolder;
     line-height: 3.5rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.title__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    position: relative;
+}
+.title__line{
+    width:70%;
+    height: 2px;
+    border-top: 2px solid var(--color-paragraph);
+    position: absolute;
+    z-index: -1;
+}
+.title__container--colors{
+    width: 200px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.title__container--colors div{
+    width: 20px;
+    height: 20px;
+}
+.title__container--colors div:nth-child(1){
+    background-color: var(--color-six);
+}
+.title__container--colors div:nth-child(2){
+    background-color: var(--color-seven);
+}
+.title__container--colors div:nth-child(3){
+    background-color: var(--color-two);
+}
+.title__container--colors div:nth-child(4){
+    background-color: var(--color-three);
+}
+.title__container--colors div:nth-child(5){
+    background-color: var(--color-four);
+}
+.title__container--colors div:nth-child(6){
+    background-color: var(--color-paragraph);
 }
 main{
     width: 100%;
@@ -51,23 +100,50 @@ main{
     width: 270px;
     display: grid;
     grid-template-columns: 1fr auto;
+    grid-template-rows: auto 80px;
     gap: 10px;
     margin: 30px 50px;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 5px 5px 3px var(--color-paragraph);
-
+    background-color: var(--color-four);
 }
 .information-container__contend{
     width: 160px;
     height: auto;
     display: grid;
     place-content: center;
+    place-self: start;
     padding: 10px;
     text-align: center;
     grid-column: 2/3;
-    grid-row: 1/3;
+    grid-row: 1/2;
     gap: 8px;
+}
+.information-container__contend h2{
+    font-size: var(--md);
+    line-height: 2rem;
+    font-weight: bold;
+}
+.information-container__contend--color-one h2{
+    color: var(--color-one);
+}
+.information-container__contend--color-two h2{
+    color: var(--color-two);
+}
+.information-container__contend--color-three h2{
+    color: var(--color-three);
+}
+.information-container__contend--color-four h2{
+    color: var(--color-six);
+}
+.information-container__contend--color-five h2{
+    color: var(--color-seven);
+}
+.information-container__contend p{
+    font-size: var(--sm);
+    line-height: 1.5rem;
+    font-weight: 300;
 }
 .information-container__line{
     width: 80px;
@@ -78,6 +154,7 @@ main{
 .information-container__number{
     font-size: 50px;
     text-align: center;
+    color: var(--main-background-color);
 }
 .information-container__number span::before{
     content: "0";
@@ -87,14 +164,26 @@ main{
     height: 110px;
     display: grid;
     place-content: center;
-    position: relative;
-    bottom: -30px;
     border-radius: 8px;
     box-shadow: 5px 5px 3px var(--color-paragraph);
-    background-color: #049DD9;
 }
 .information-container__img img{
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
+}
+.information-container__img--color-one{
+    background-color: var(--color-one);
+}
+.information-container__img--color-two{
+    background-color: var(--color-two);
+}
+.information-container__img--color-three{
+    background-color: var(--color-three);
+}
+.information-container__img--color-four{
+    background-color: var(--color-six);
+}
+.information-container__img--color-five{
+    background-color: var(--color-seven);
 }
